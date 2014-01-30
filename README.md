@@ -122,3 +122,22 @@ data
 
 ```
 
+Medidas do aparelho
+---
+**GET**
+```
+/services/{token}/assets/{token}/data
+```
+
+**Params**
+
+-   limit
+-   offset
+-   sortBy
+    --  samplingTime
+
+**RESPONSE**
+```
+das
+```
+
