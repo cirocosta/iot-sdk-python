@@ -39,7 +39,21 @@ $ nosetests --verbose
 
 Se tudo estiver ok, basta utilizar como indicado na próxima sessão
 
+Utilizando
+===
 
+```python
+from iotsdk import Iot
+import secrets
+
+iot = Iot(secrets.MY_TOKEN)
+
+iot.get_services_details()
+iot.get_connected_devices()
+iot.get_device_data()
+iot.get_device_data(limit=10)
+iot.get_device_full_data()
+```
 
 DCA
 ===
@@ -170,3 +184,6 @@ Medidas do aparelho
 das
 ```
 
+Contributing
+===
+see `CONTRIBUTING.md` file.
