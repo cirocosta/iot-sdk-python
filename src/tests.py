@@ -1,4 +1,5 @@
 import unittest
+import secrets
 from iotsdk import Iot
 
 
@@ -38,17 +39,17 @@ class TestIotSdk(unittest.TestCase):
 
     def test_get_services_details(self):
         self.assertFalse(self.iot.get_services_details())
-        self.iot2 = Iot("7ttrxsqhdxc1")  # get from the testing env
+        self.iot2 = Iot(secrets.IOT_TOKEN)  # get from the testing env
         self.assertTrue(self.iot2.get_services_details())
 
     def test_get_connected_devices(self):
         self.assertFalse(self.iot.get_connected_devices())
-        self.iot2 = Iot("7ttrxsqhdxc1")  # get from the testing env
+        self.iot2 = Iot(secrets.IOT_TOKEN)  # get from the testing env
         self.assertTrue(self.iot2.get_connected_devices())        
 
     def test_get_device_data(self):
         self.assertFalse(self.iot.get_device_data())
-        self.iot2 = Iot("7ttrxsqhdxc1")
+        self.iot2 = Iot(secrets.IOT_TOKEN)
         self.assertTrue(self.iot2.get_connected_devices())
 
 

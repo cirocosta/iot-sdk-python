@@ -3,7 +3,7 @@ Concurso IoT Telefonica
 
 iot-telefonica-cpbr7
 Tema sorteado: **emprego**, **enchentes**.
-token: 7ttrxsqhdxc1
+token: @secrets
 
 
 
