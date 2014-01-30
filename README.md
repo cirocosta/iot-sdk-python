@@ -40,7 +40,7 @@ $ nosetests --verbose
 Se tudo estiver ok, basta utilizar como indicado na próxima sessão
 
 Utilizando
-===
+---
 
 ```python
 from iotsdk import Iot
@@ -56,7 +56,7 @@ iot.get_device_full_data()
 ```
 
 DCA
-===
+---
 > Plataforma cloud da Telefonica.
 
 Para o concurso há basicamente apenas uma entrada, a referente a seu serviço, sendo então ramificada para informações do(s) aparelho(s).
@@ -118,17 +118,13 @@ Aparelhos Conectados
 services/{token}/assets
 ```
 
-**Parameters for the request**
-
--   limit
-
-
 **RESPONSE**
+```
 count
 data
     asset
     name
-
+```
 
 Dados vindos do aparelho
 ---
@@ -181,7 +177,9 @@ Medidas do aparelho
 
 **RESPONSE**
 ```
-das
+asset
+count
+data
 ```
 
 Contributing
