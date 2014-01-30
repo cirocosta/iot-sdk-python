@@ -1,15 +1,44 @@
-Concurso IoT Telefonica
+IoT-sdk for Python
 ===
-
-iot-telefonica-cpbr7
-Tema sorteado: **emprego**, **enchentes**.
-token: @secrets
-
-
 
 Estrutura
-===
-Todo o código sera processado e armazenado no GAE, que por CRON irá dar um fetch em toda informação enviada pelo mesmo para o cloud.
+---
+```
+.env/                   -- environmental path do virtualenv
+src/                    -- código
+    iotsdk.py           -- bibliteca
+    secrets.py          -- contém o token
+    tests.py            -- testes (sem divisão por tipo)
+requirements.txt        -- dev dependencies
+```
+
+Install
+---
+
+Instale o virtualenv
+
+```bash
+$ pip install virtualenv
+```
+
+Crie o ambiente
+```bash
+$ virtualenv .env
+```
+
+Ative o ambiente
+```bash
+$ source .env/bin/activate
+```
+
+Rode os testes
+```bash
+$ cd src/
+$ nosetests --verbose
+```
+
+Se tudo estiver ok, basta utilizar como indicado na próxima sessão
+
 
 
 DCA
