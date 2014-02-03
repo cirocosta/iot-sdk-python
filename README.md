@@ -1,4 +1,4 @@
-IoT-sdk for Python
+IoT-sdk for Python [![Build Status](https://travis-ci.org/cirocosta/iot-sdk-python.png)](https://travis-ci.org/cirocosta/iot-sdk-python)
 ===
 
 Estrutura
