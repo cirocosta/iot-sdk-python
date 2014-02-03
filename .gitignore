@@ -1,5 +1,2 @@
 # VirtualEnv environment
 .env/
-
-# File containing the secrets
-secrets.py
