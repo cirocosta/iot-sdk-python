@@ -63,8 +63,6 @@ class TestIotSdk(unittest.TestCase):
     def test_get_device_data(self):
         self.assertFalse(self.iot.get_device_data())
         self.iot2 = Iot(secrets.IOT_TOKEN)
-        self.assertTrue(self.iot2.get_device_data()) # will take a while
-
         self.assertTrue(self.iot2.get_device_data(limit=10))
         self.assertTrue(self.iot2.get_device_data(limit=10,lol=10))
 
